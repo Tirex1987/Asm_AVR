@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rusTextFolderIncludes">Папка "Includes"</string>
+    <string name="rusTextFolderProjects">Папка "Projects"</string>
+    <string name="rusTextLanguage">Язык</string>
+    <string name="rusTextChosenLanguage">Русский</string>
+    <string name="rusTextButtonPathes">Изменить</string>
+    <string name="rusTextButtonLanguage">Выбрать</string>
+</resources>

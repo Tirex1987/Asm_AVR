@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTabFocused"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#070707"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#070707"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/layoutForContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#070707"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#070707"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/layoutForButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonInDialog"
+                style="@style/StyleButtonsInPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:textColor="#A3A1A1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

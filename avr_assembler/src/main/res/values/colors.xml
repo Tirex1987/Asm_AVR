@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPanelButtons">#FFD8EFCF</color>
+    <color name="colorBackgroundProjectName">#E9EFE9</color>
+    <color name="colorTabFocused">#A0D37E</color>
+    <color name="colorTabBackground">#EFEFEF</color>
+    <color name="dialogTextColor">#FF1D8122</color>
+    <color name="file_manager_list_files_background">#FFF8F8F8 </color>
+    <color name="file_manager_list_files_selected">#FFBBBBBB</color>
+</resources>

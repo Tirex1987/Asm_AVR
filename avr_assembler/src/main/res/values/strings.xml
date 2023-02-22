@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Assembler AVR</string>
+
+    <string name="menu_main_build">Собрать проект</string>
+    <string name="menu_main_new_project">Новый проект</string>
+    <string name="menu_main_open_project">Открыть проект</string>
+    <string name="menu_main_new_file">Новый файл</string>
+    <string name="menu_main_open_file">Открыть файл</string>
+    <string name="menu_main_close_tab">Закрыть вкладку</string>
+    <string name="menu_main_save">Сохранить</string>
+    <string name="menu_main_save_as">Сохранить как...</string>
+    <string name="menu_main_save_all">Сохранить все</string>
+    <string name="menu_main_settings">Настройки</string>
+    <string name="menu_main_help">Справка</string>
+    <string name="menu_main_exit">Выход</string>
+
+    <string name="menu_edit_undo">Отменить</string>
+    <string name="menu_edit_redo">Повторить</string>
+    <string name="menu_edit_select_all">Выделить все</string>
+    <string name="menu_edit_find">Найти...</string>
+    <string name="menu_edit_find_and_replace">Найти и заменить...</string>
+    <string name="menu_edit_go_to_line">Перейти к строке...</string>
+
+    <string name="panel_name_project">Проект:</string>
+
+    <string name="dialog_create_new_project_window_name">Создание проекта</string>
+    <string name="dialog_create_new_project_label_name">Имя проекта:</string>
+    <string name="dialog_cretae_new_project_edittext_hint">Введите имя проекта</string>
+    <string name="dialog_create_new_project_label_select_mc">Выберите МК:</string>
+    <string name="dialog_create_new_project_type_mc_no">Нет</string>
+    <string name="dialog_create_new_project_button_create">Создать проект</string>
+    <string name="dialog_create_new_project_button_cancel">Отмена</string>
+
+    <string name="create_project_double_name">Проект с таким именем уже существует</string>
+    <string name="create_project_invalid_name">Недопустимое имя проекта</string>
+
+    <string name="project_avr_file_saved">Сохранено</string>
+    <string name="project_avr_saving_error">Ошибка при сохранении файла: </string>
+    <string name="project_avr_saving_prj_error">Ошибка при сохранении файла проекта</string>
+    <string name="project_avr_no_file_error">Файл не найден</string>
+    <string name="project_avr_open_file_error">Ошибка доступа к файлу</string>
+    <string name="project_avr_read_file_error">Ошибка чтения файла</string>
+    <string name="project_avr_read_file_project_error">Файл проекта поврежден</string>
+
+    <string name="dialog_create_new_file_label_name">Имя файла:</string>
+    <string name="dailog_create_new_file_edittext_hint">Введите имя файла</string>
+    <string name="dialog_create_new_file_label_path_for_create">Создать файл в</string>
+    <string name="dialog_create_new_file_radio_create_in_includes_folder">папке библиотек</string>
+    <string name="dialog_create_new_file_radio_create_in_project_folder">папке проекта</string>
+    <string name="dialog_create_new_file_button_create">Создать файл</string>
+    <string name="dialog_create_new_file_button_cancel">Отмена</string>
+    <string name="create_file_double_name">Файл с таким именем уже существует</string>
+    <string name="create_file_invalid_name">Недопустимое имя файла</string>
+
+    <string name="file_manager_title_open_file">Открыть файл</string>
+    <string name="file_manager_title_open_folder">Выберите папку</string>
+    <string name="file_manager_title_open_project">Открытие проекта</string>
+
+    <string name="file_manager_activity_error_load_files">Ошибка доступа к файловой системе</string>
+
+    <string name="file_manager_dialog_sort_window_name">Сортировать:</string>
+    <string name="file_manager_dialog_sort_radio_by_name">по имени</string>
+    <string name="file_manager_dialog_sort_radio_by_date">по дате последнего изменения</string>
+    <string name="file_manager_dialog_sort_button_ok">Ок</string>
+    <string name="file_manager_dialog_sort_button_cancel">Отмена</string>
+
+    <string name="file_manager_dialog_create_folder_window_name">Создать папку</string>
+    <string name="file_manager_dialog_create_folder_label_name">Имя папки:</string>
+    <string name="file_manager_dialog_create_folder_edittext_hint">Введите имя папки</string>
+    <string name="file_manager_dialog_create_folder_button_create">Создать папку</string>
+    <string name="file_manager_dialog_create_folder_button_cancel">Отмена</string>
+
+    <string name="file_manager_invalid_folder_name">Недопустимое имя папки</string>
+    <string name="file_manager_folder_double_name">Папка с таким именем уже существует</string>
+    <string name="file_manager_invalid_file_name">Недопустимое имя файла</string>
+    <string name="file_manager_file_double_name">Файл с таким именем уже существует</string>
+
+    <string name="exit_from_programm">Дважды нажмите кнопку НАЗАД для выхода из приложения</string>
+
+    <string name="file_manager_context_menu_dir_open">Открыть</string>
+    <string name="file_manager_context_menu_dir_rename">Переименовать</string>
+    <string name="file_manager_context_menu_dir_delete">Удалить</string>
+    <string name="file_manager_context_menu_file_open">Открыть файл</string>
+    <string name="file_manager_context_menu_file_rename">Переименовать</string>
+    <string name="file_manager_context_menu_file_copy">Копировать</string>
+    <string name="file_manager_context_menu_file_remove">Переместить</string>
+    <string name="file_manager_context_menu_file_delete">Удалить</string>
+
+    <string name="file_manager_dialog_rename_folder_window_name">Переименовать папку</string>
+    <string name="file_manager_dialog_rename_folder_label_name">Новое имя папки:</string>
+    <string name="file_manager_dialog_rename_folder_edittext_hint">Введите имя папки</string>
+    <string name="file_manager_dialog_rename_folder_button_rename">Переименовать</string>
+    <string name="file_manager_dialog_rename_folder_button_cancel">Отмена</string>
+
+    <string name="file_manager_dialog_delete_folder_window_name">Удалить папку</string>
+    <string name="file_manager_dialog_delete_folder_label_name_1">Вы действительно хотите удалить папку \"</string>
+    <string name="file_manager_dialog_delete_folder_label_name_2">\" со всем ее содержимым?</string>
+    <string name="file_manager_dialog_delete_folder_button_delete">Удалить</string>
+    <string name="file_manager_dialog_delete_folder_button_cancel">Отмена</string>
+    <string name="file_manager_dialog_delete_folder_deleted">Папка удалена</string>
+
+    <string name="file_manager_dialog_delete_file_window_name">Удалить файл</string>
+    <string name="file_manager_dialog_delete_file_label_name">Вы действительно хотите удалить файл \"</string>
+    <string name="file_manager_dialog_delete_file_button_delete">Удалить</string>
+    <string name="file_manager_dialog_delete_file_button_cancel">Отмена</string>
+
+    <string name="file_manager_dialog_rename_file_window_name">Переименовать файл</string>
+    <string name="file_manager_dialog_rename_file_label_name">Новое имя файла:</string>
+    <string name="file_manager_dialog_rename_file_edittext_hint">Введите имя файла</string>
+    <string name="file_manager_dialog_rename_file_button_rename">Переименовать</string>
+    <string name="file_manager_dialog_rename_file_button_cancel">Отмена</string>
+
+    <string name="file_manager_bottom_panel_button_remove_file_ok">Переместить файл сюда</string>
+    <string name="file_manager_bottom_panel_button_remove_file_cancel">Отмена</string>
+    <string name="file_manager_remove_file_done">Файл перемещен</string>
+    <string name="file_manager_remove_file_error">Ошибка при попытке перемещения файла</string>
+    <string name="file_manager_remove_file_error_need_new_dir">Выберите другую папку для перемещения файла</string>
+
+    <string name="file_manager_bottom_panel_button_copy_file_ok">Копировать файл сюда</string>
+    <string name="file_manager_bottom_panel_button_copy_file_cancel">Отмена</string>
+    <string name="file_manager_copy_file_done">Файл скопирован</string>
+    <string name="file_manager_copy_file_error">Ошибка при попытке копирования файла</string>
+    <string name="file_manager_copy_file_error_need_new_dir">Выберите другую папку для копирования файла</string>
+
+    <string name="file_manager_dialog_replace_file_label_name_1">Файл \"</string>
+    <string name="file_manager_dialog_replace_file_label_name_2">\" уже существует в выбранной папке. Действительно хотите заменить его?</string>
+    <string name="file_manager_dialog_replace_file_button_replace">Заменить файл</string>
+    <string name="file_manager_dialog_replace_file_button_cancel">Отмена</string>
+
+    <string name="file_manager_search_panel_edit_text_hint">Имя файла</string>
+
+    <string name="file_manager_work_thread_no_exit">Пожалуйста, дождитесь завершения текущей операции</string>
+    <string name="file_manager_thread_interrupt">Операция прервана пользователем</string>
+    <string name="file_manager_thread_fill_error_load">Ошибка. Загрузка файлов не удалась.</string>
+
+</resources>

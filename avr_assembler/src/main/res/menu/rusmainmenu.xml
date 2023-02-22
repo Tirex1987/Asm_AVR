@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_compile"
+        android:title="Компиляция">
+    </item>
+    <item
+        android:id="@+id/menu_save"
+        android:title="Сохранить">
+    </item>
+    <item
+        android:id="@+id/menu_save_as"
+        android:title="Сохранить как..">
+    </item>
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Настройки">
+    </item>
+    <item
+        android:id="@+id/menu_exit"
+        android:title="Выход">
+    </item>
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/menu_copy"
+            android:orderInCategory="1"
+            android:title="Копировать">
+        </item>
+        <item
+            android:id="@+id/menu_paste"
+            android:orderInCategory="2"
+            android:title="Вставить">
+        </item>
+        <item
+            android:id="@+id/menu_delete"
+            android:orderInCategory="3"
+            android:title="Удалить">
+        </item>
+    </group>
+</menu>

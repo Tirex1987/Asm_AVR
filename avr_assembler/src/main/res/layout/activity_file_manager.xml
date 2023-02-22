@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTabFocused"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fileManagerBtnCancel"
+                style="@style/StyleButtonsInPanel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorTabFocused"
+                android:paddingLeft="5dp"
+                app:srcCompat="@drawable/button_back_192" />
+
+            <TextView
+                android:id="@+id/fileManagerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTabFocused"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/file_manager_title_open_file"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPanelButtons"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPanelButtons"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/fileManagerBtnFilterFileTypes"
+                    style="@style/StyleButtonsInPanel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:paddingLeft="5dp"
+                    app:srcCompat="@drawable/icon_filter_file_types" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":   "
+                    android:textSize="20sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPanelButtons">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPanelButtons"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fileManagerTextViewfileTypes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPanelButtons"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/fileManagerBtnCreateFolder"
+                style="@style/StyleButtonsInPanel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/button_create_folder" />
+
+            <ImageButton
+                android:id="@+id/fileManagerBtnSearch"
+                style="@style/StyleButtonsInPanel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                app:srcCompat="@drawable/button_search_file_manager" />
+
+            <ImageButton
+                android:id="@+id/fileManagerBtnSort"
+                style="@style/StyleButtonsInPanel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/button_sort_file_manager" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/fileManagerHorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundProjectName"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/fileManagerPathContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/pathTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBackgroundProjectName"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minWidth="30dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="."
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/pathButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@color/colorBackgroundProjectName"
+                    android:minWidth="30dp"
+                    android:text="/"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/fileManagerSearchPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundProjectName"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp">
+
+                <EditText
+                    android:id="@+id/fileManagerSearchEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoText="false"
+                    android:background="@color/file_manager_list_files_background"
+                    android:hint="@string/file_manager_search_panel_edit_text_hint"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/fileManagerSearchPanelButtonFind"
+                    style="@style/StyleButtonsInPanel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorBackgroundProjectName"
+                    app:srcCompat="@drawable/button_find_file_manager_2" />
+
+                <ImageButton
+                    android:id="@+id/fileManagerSearchPanelButtonClear"
+                    style="@style/StyleButtonsInPanel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorBackgroundProjectName"
+                    app:srcCompat="@drawable/button_clear_find_field_enabled_file_manager" />
+
+                <ImageButton
+                    android:id="@+id/fileManagerSearchPanelButtonClose"
+                    style="@style/StyleButtonsInPanel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorBackgroundProjectName"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <ScrollView
+            android:id="@+id/fileManagerScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/file_manager_list_files_background">
+
+            <LinearLayout
+                android:id="@+id/fileManagerFilesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/fileManagerBottomPanelForButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTabFocused"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorTabFocused"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <Button
+                    android:id="@+id/fileManagerButtonOk"
+                    style="@style/StyleButtonsInDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fileManagerButtonCancel"
+                    style="@style/StyleButtonsInDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fileManagerLayoutForProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="#4C4B4B"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/fileManagerProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2" />
+
+</android.support.constraint.ConstraintLayout>

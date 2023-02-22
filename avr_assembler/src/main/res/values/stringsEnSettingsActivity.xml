@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enTextFolderIncludes">Folder "Includes"</string>
+    <string name="enTextFolderProjects">Folder "Projects"</string>
+    <string name="enTextLanguage">Language</string>
+    <string name="enTextChosenLanguage">English</string>
+    <string name="enTextButtonPathes">Change</string>
+    <string name="enTextButtonLanguage">Select</string>
+</resources>

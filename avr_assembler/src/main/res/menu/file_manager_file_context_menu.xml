@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/file_manager_context_menu_file_open"
+        android:title="@string/file_manager_context_menu_file_open"/>
+    <item android:id="@+id/file_manager_context_menu_file_rename"
+        android:title="@string/file_manager_context_menu_file_rename"/>
+    <item android:id="@+id/file_manager_context_menu_file_copy"
+        android:title="@string/file_manager_context_menu_file_copy"/>
+    <item android:id="@+id/file_manager_context_menu_file_remove"
+        android:title="@string/file_manager_context_menu_file_remove"/>
+    <item android:id="@+id/file_manager_context_menu_file_delete"
+        android:title="@string/file_manager_context_menu_file_delete"/>
+</menu>
